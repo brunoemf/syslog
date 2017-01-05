@@ -7,4 +7,6 @@ module.exports = function(app) {
     app.post("/eventos",api.insere);
 
     app.get("/eventos",api.lista);
+
+    app.get("/eventos/:aplicacao",api.buscaPorAplicacao);
 };

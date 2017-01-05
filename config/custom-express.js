@@ -1,16 +1,14 @@
 var express = require('express');
 var consign = require('consign');
 var bodyParser = require('body-parser');
-var expressValidator = require('express-validator');
+
 
 module.exports = function () {
   // body...
   var app = express();
 
   app.use(bodyParser.urlencoded({extended: true}));
-  app.use(bodyParser.json());
-
-  app.use(expressValidator());
+  app.use(bodyParser.json());  
 
   consign({cwd:'app'})
     .include('persistencia')
@@ -18,7 +16,7 @@ module.exports = function () {
     .then('api')
     .then('rotas')
     .into(app);
-    
+
 
   return app;
 };

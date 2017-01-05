@@ -1,7 +1,7 @@
 
 var mongoose = require('mongoose');
 
-var db = mongoose.connect('mongodb://localhost/aidm');
+var db = mongoose.connect('mongodb://localhost/syslog');
 
 db.connection.on('connected',function() {
     console.log('Conectado ao MongoDB');;
