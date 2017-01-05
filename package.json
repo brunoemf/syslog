@@ -1,18 +1,18 @@
 {
-  "name": "aidm",
+  "name": "syslog Serttel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema de registro de logs para os sistemas da Serttel.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Bruno Figueirôa",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
     "consign": "^0.1.2",
     "express": "^4.14.0",
-    "mongoose": "^4.6.5"    
+    "mongoose": "^4.6.5"
   }
 }
