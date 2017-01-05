@@ -1,5 +1,5 @@
 {
-  "name": "syslog Serttel",
+  "name": "syslog_Serttel",
   "version": "1.0.0",
   "description": "Sistema de registro de logs para os sistemas da Serttel.",
   "main": "index.js",
