@@ -32,5 +32,18 @@ api.lista = function (req,res) {
 
 }
 
+api.buscaPorAplicacao = function (req,res) {
+
+   var nomeAplicacao = req.params.aplicacao;
+
+   modelEvento.find({aplicacao:nomeAplicacao})
+      .then(function(result) {
+         res.status(200).json(result);
+      }), function(error) {
+         res.status(500).json(error);
+      };
+
+}
+
 // Retorna o Objeto API.
 module.exports = api;
